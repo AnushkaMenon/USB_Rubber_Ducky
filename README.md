@@ -4,7 +4,7 @@ This repo contains all of the scripts I've written for my COMP6841 Something Awe
 
 ## Files:
 ### rubber_ducky_basic_terminal
-  * a simple file just to open up the terminal
+  * a simple script used to just open up the terminal
 
 ### open_links
   * **open_links_mac.ino**: opens a video in twenty different windows on a Mac
