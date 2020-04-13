@@ -54,10 +54,6 @@ void loop() {
 
     // enter full screen
     DigiKeyboard.sendKeyStroke(KEY_F, MOD_CONTROL_LEFT | MOD_GUI_LEFT);
-
-    //DigiKeyboard.sendKeyStroke(KEY_A, MOD_GUI_LEFT);
-    //DigiKeyboard.sendKeyStroke(KEY_W, MOD_GUI_LEFT);
-    //DigiKeyboard.sendKeyStroke(KEY_Q, MOD_GUI_LEFT);
     
     finished = true;
   }
