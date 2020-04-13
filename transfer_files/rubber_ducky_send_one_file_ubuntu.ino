@@ -1,5 +1,7 @@
 #include "DigiKeyboard.h"
 
+// Meant to run on Ubuntu Server
+
 void setup() {
   // put your setup code here, to run once:
 
