@@ -8,16 +8,15 @@ void setup() {
 boolean finished = false;
 
 void loop() {
-  // put your main code here, to run repeatedly:
   if (!finished) {
     DigiKeyboard.sendKeyStroke(0);
 
     // opening the terminal
     // keyboard shortcut for opening the run window is Windows Key + R
     DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
-    // add a delay to ensure that the window has opened before
-    //  we type more
+    // add a delay to ensure that the window has opened before we type more
     DigiKeyboard.delay(1500);
+    // open cmd
     DigiKeyboard.print("cmd");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     DigiKeyboard.delay(1000);
