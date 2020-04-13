@@ -44,6 +44,7 @@ void loop() {
     
     // allow for a delay so that the video can start playing
     DigiKeyboard.delay(3000);
+    
     // open a new window and paste the link in
     DigiKeyboard.sendKeyStroke(KEY_N, MOD_CONTROL_LEFT);
     DigiKeyboard.sendKeyStroke(KEY_V, MOD_CONTROL_LEFT);
